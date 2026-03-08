@@ -113,8 +113,9 @@ source $ZSH/oh-my-zsh.sh
 # alias ohmyzsh="mate ~/.oh-my-zsh"
 alias nvim="~/packages/nvim-linux-x86_64/bin/nvim"
 
-# Adding typst
+# Exports
 export PATH="$PATH:/snap/bin"
+export DOWNLOADS="/mnt/c/Users/ckeir/Downloads/"
 
 # ssh-agent
 eval $(ssh-agent -s) > /dev/null
@@ -125,6 +126,7 @@ source /home/ckdbarnz/packages/zsh-syntax-highlighting/zsh-syntax-highlighting.z
 
 . "$HOME/.local/bin/env"
 
+# nvm stuff
 export NVM_DIR="$HOME/.nvm"
 [ -s "$NVM_DIR/nvm.sh" ] && \. "$NVM_DIR/nvm.sh"  # This loads nvm
 [ -s "$NVM_DIR/bash_completion" ] && \. "$NVM_DIR/bash_completion"  # This loads nvm bash_completion
