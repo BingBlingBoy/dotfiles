@@ -1,3 +1,11 @@
+# fastfetch 
+fastfetch --config ~/.config/fastfetch/presets/berserk.jsonc
+
+# ssh-agent
+eval $(ssh-agent -s) > /dev/null
+
+
+
 # Enable Powerlevel10k instant prompt. Should stay close to the top of ~/.zshrc.
 # Initialization code that may require console input (password prompts, [y/n]
 # confirmations, etc.) must go above this block; everything else may go below.
@@ -5,7 +13,8 @@ if [[ -r "${XDG_CACHE_HOME:-$HOME/.cache}/p10k-instant-prompt-${(%):-%n}.zsh" ]]
   source "${XDG_CACHE_HOME:-$HOME/.cache}/p10k-instant-prompt-${(%):-%n}.zsh"
 fi
 
-typeset -g POWERLEVEL9K_INSTANT_PROMPT=quiet
+
+# typeset -g POWERLEVEL9K_INSTANT_PROMPT=quiet
 
 # If you come from bash you might have to change your $PATH.
 # export PATH=$HOME/bin:$HOME/.local/bin:/usr/local/bin:$PATH
@@ -117,9 +126,6 @@ alias nvim="~/packages/nvim-linux-x86_64/bin/nvim"
 export PATH="$PATH:/snap/bin"
 export DOWNLOADS="/mnt/c/Users/ckeir/Downloads/"
 
-# ssh-agent
-eval $(ssh-agent -s) > /dev/null
-
 # To customize prompt, run `p10k configure` or edit ~/.p10k.zsh.
 [[ ! -f ~/.p10k.zsh ]] || source ~/.p10k.zsh
 source /home/ckdbarnz/packages/zsh-syntax-highlighting/zsh-syntax-highlighting.zsh
@@ -130,3 +136,5 @@ source /home/ckdbarnz/packages/zsh-syntax-highlighting/zsh-syntax-highlighting.z
 export NVM_DIR="$HOME/.nvm"
 [ -s "$NVM_DIR/nvm.sh" ] && \. "$NVM_DIR/nvm.sh"  # This loads nvm
 [ -s "$NVM_DIR/bash_completion" ] && \. "$NVM_DIR/bash_completion"  # This loads nvm bash_completion
+
+
