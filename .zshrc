@@ -1,5 +1,5 @@
-# fastfetch 
-fastfetch --config ~/.config/fastfetch/presets/berserk.jsonc
+# fastfetch
+# fastfetch --config ~/.config/fastfetch/presets/berserk.jsonc
 
 # ssh-agent
 eval $(ssh-agent -s) > /dev/null
@@ -88,7 +88,7 @@ ZSH_THEME="powerlevel10k/powerlevel10k"
 # Custom plugins may be added to $ZSH_CUSTOM/plugins/
 # Example format: plugins=(rails git textmate ruby lighthouse)
 # Add wisely, as too many plugins slow down shell startup.
-plugins=(git aliases ubuntu systemadmin sudo history vscode docker docker-compose zsh-autosuggestions)
+plugins=(git aliases ubuntu systemadmin sudo history vscode docker docker-compose zsh-autosuggestions zsh-syntax-highlighting)
 
 source $ZSH/oh-my-zsh.sh
 
@@ -120,21 +120,16 @@ source $ZSH/oh-my-zsh.sh
 # Example aliases
 # alias zshconfig="mate ~/.zshrc"
 # alias ohmyzsh="mate ~/.oh-my-zsh"
-alias nvim="~/packages/nvim-linux-x86_64/bin/nvim"
 
 # Exports
+export PATH="$PATH:/opt/nvim-linux-x86_64/bin"
 export PATH="$PATH:/snap/bin"
 export DOWNLOADS="/mnt/c/Users/ckeir/Downloads/"
 
 # To customize prompt, run `p10k configure` or edit ~/.p10k.zsh.
 [[ ! -f ~/.p10k.zsh ]] || source ~/.p10k.zsh
-source /home/ckdbarnz/packages/zsh-syntax-highlighting/zsh-syntax-highlighting.zsh
-
-. "$HOME/.local/bin/env"
 
 # nvm stuff
 export NVM_DIR="$HOME/.nvm"
 [ -s "$NVM_DIR/nvm.sh" ] && \. "$NVM_DIR/nvm.sh"  # This loads nvm
 [ -s "$NVM_DIR/bash_completion" ] && \. "$NVM_DIR/bash_completion"  # This loads nvm bash_completion
-
-
